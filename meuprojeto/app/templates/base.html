@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    {%  block head %}
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <link rel="stylesheet" href="../static/style.css">
-    <link rel="text/css" href="../static/normalize.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="text/css" href="{{ url_for('static', filename='css/normalize.css')}}">
+    {% endblock %}
 
-    
+    <style>
+        body{
+            margin: 20px 150px 0px;
+            max-width: 60%;
+            background-image: url("{{ url_for('static', filename='../static/images/fundo2.png')}}");
+            background-size: 1024px 2512px;
+        }
+
+
+    </style>
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <a href="/index"><img src="{{ url_for('static', filename='images/logo.png')}}" alt="line-above"></a>
+        <div class="logo">
+        {% block header %}
+        <a href="/index"><img src="{{ url_for('static', filename='images/logo.png')}}" alt="logo-site"></a>
         <nav class="link">
             <a href="/index">Home</a> |
             <a href="/quemsomos">Quem somos</a> |
             <a href="/contato">Contato</a>
         </nav>
+        {% endblock %}
+        </div>
+        
     </header>
 
     {% block content %}

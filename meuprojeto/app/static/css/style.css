@@ -1,17 +1,47 @@
-body {
+/* Links Menu */
+.link {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    float: right;
+    margin-top: -1%;
+    margin-right: -150px;
+    /* transform:translateY(-10%);
+    transform:translateX(-15%); */
+}
+
+.capa_index{
+    background-image: url('../images/fundo.png');
+    margin: 20px 150px 0px;
+    max-width: 60%;
+    background-size: 1024px 2512px;
+}
+
+.logo{
+    margin-left: 150px;
+}
+
+/* body {
     max-width: 60%;
     margin: auto;
     background-image: url("../static/images/fundo.png");
-}
+} */
 
-p {
+.p {
+    margin-left: 150px;
     max-width: auto;
+    max-height: auto;
     padding: 22px 0;
     position: relative;
+    display: inline-block;
 }
-#fundo2 {
+
+h2{
+    margin-left: 150px;
+}
+/* #fundo2 {
     background-image: url("../static/images/fundo2.png");
-}
+} */
 
 header {
     padding: 22px 0;
@@ -40,7 +70,12 @@ footer {
 
 /* formulário contatos */
 .form-item {
-    margin: 0;
+    margin-left: 150px;
+    max-width: auto;
+    max-height: auto;
+    padding: 22px 0;
+    position: relative;
+    /* display: inline-block; */
 }
 .form-item label{
     display: block;

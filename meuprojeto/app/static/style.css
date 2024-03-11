@@ -1,0 +1,61 @@
+body {
+    max-width: 60%;
+    margin: auto;
+    background-image: url("../static/images/fundo.png");
+}
+
+p {
+    max-width: auto;
+    padding: 22px 0;
+    position: relative;
+}
+#fundo2 {
+    background-image: url("../static/images/fundo2.png");
+}
+
+header {
+    padding: 22px 0;
+    position: relative;
+} 
+
+.link {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform:translateY(-50%);
+    transform:translateX(-15%);
+
+}
+
+.capa {
+    text-align: center;
+    width: 70em;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* formulário contatos */
+.form-item {
+    margin: 0;
+}
+.form-item label{
+    display: block;
+}
+
+/* input {
+    display: inline-block;
+    width: 6em;
+    position: relative;
+    top: -3em;
+  }
+
+  label {
+    display: inline-block;
+    width: 6em;
+    margin-right: .2em;
+    padding-top: 1.5em;
+  } */
